@@ -13,6 +13,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "tb_temas")
@@ -23,6 +24,7 @@ public class Tema {
 	private Long id;
 
 	@NotNull(message = "O atributo descrição é obrigatório")
+	@Size(min = 4, max = 50, message = "O campo descrição precisa ter entre 4 e 50 caracteres.")
 	private String descricao;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "tema", cascade = CascadeType.REMOVE)
