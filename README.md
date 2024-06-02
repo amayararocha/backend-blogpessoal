@@ -1,4 +1,4 @@
-# 📝 Meu Blog Pessoal 📝
+# 📝 Projeto Blog Pessoal 📝
 
 ## 📚 Descrição
 
