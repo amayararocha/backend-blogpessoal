@@ -8,6 +8,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.generation.blogpessoal.model.Usuario;
 
+
+//informa para o security os dados de acesso da minha API
 public class UserDetailsImpl implements UserDetails {
 	
 	private static final long serialVersionUID = 1L; 
